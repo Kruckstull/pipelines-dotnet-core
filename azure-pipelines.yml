@@ -28,5 +28,5 @@ steps:
   displayName: Build
   inputs:
     command: build
-    projects> '**/*.csproj'
+    projects: '**/*.csproj'
     arguments: '--configuration $(buildconfiguration)'
