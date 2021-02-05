@@ -30,7 +30,8 @@ steps:
     command: restore
     projects: '**/*.csproj'
     feedsToUse: select
-    vstsFeed: my-vsts-feed
+    vstsFeed: pipelines-dotnet-core/Nuget.Config
+    includeNuGetOrg: true
 
 - task: DotNetCoreCLI@2
   displayName: Build
